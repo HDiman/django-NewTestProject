@@ -5,7 +5,7 @@ print("Starting to code Galactic Finance Game")
 
 def func_itr():
     while True:
-        yield round(random.random(), 2)
+        yield int(random.random() * 100)
 
 
 rnd_num = func_itr()
