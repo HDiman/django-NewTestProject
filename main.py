@@ -16,4 +16,17 @@ rnd_num = func_itr()
 
 lst = [1, 2, 3, 4, 5]
 new_list = list(map(lambda x: x*2, lst))
-print(new_list)
+# print(new_list)
+
+
+
+def make_important(fn):
+    def wrapped():
+        return "!" + fn() + "!"
+    return wrapped
+
+@make_important
+def hello():
+    return 'hello habr'
+
+print(hello())
