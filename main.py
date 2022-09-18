@@ -32,5 +32,9 @@
 # print(hello())
 
 lst = ["first", "second", "third"]
+lst2 = []
 for index, value in enumerate(lst):
     print(index, value)
+    lst2.append(value)
+
+print(list(reversed(lst2)))
