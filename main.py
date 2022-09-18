@@ -31,10 +31,16 @@
 #
 # print(hello())
 
-lst = ["first", "second", "third"]
-lst2 = []
-for index, value in enumerate(lst):
-    print(index, value)
-    lst2.append(value)
+# lst = ["first", "second", "third"]
+# lst2 = []
+# for index, value in enumerate(lst):
+#     print(index, value)
+#     lst2.append(value)
+#
+# print(list(reversed(lst2)))
 
-print(list(reversed(lst2)))
+lst = [True, True, True]
+if any(lst):
+    print("Some is True")
+if all(lst):
+    print("All is True")
